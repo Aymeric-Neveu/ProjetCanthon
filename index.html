@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quizz Ecologie</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+	<div class='row js-startPage'>
+		<div class='col-5 start'>
+			<h1>Connais-tu l'ecologie?</h1>
+			<button class='js-start hover' style="color:black">Commencer</button>
+		</div>
+	</div>
+	<div class='row hidden' id='question-container'>
+		<section class='question-container col-8'>
+			<p class="question">Ou jettes tu ton papier?</p><br>
+			<button><img src="img/poubelle_verte.png"	style="height:160px" class='button0 js-answer hover' value='0'></button>
+			<button><img src="img/trottoir.jpg" style="height:160px" class='button1 js-answer hover' value='1'></button>
+			<button><img src="img/marre_canard.jpg" style="height:160px" class='button2 js-answer hover' value='2'></button>
+		</section>
+	</div>
+	<div class='row'>
+		<div class='continue-container col-8'>
+			<div class='positionLeft'>
+				<span class='js-count'>Question: 1/10</span><br>
+				<span class='js-score'>Correct: 0/0</span>
+			</div>
+			<button class='continue js-continue hidden'>continue</button>
+		</div>
+	</div>
+	<div class='row response-row'>
+		<div class='col-12'>
+			<div class='result'>
+				<span class='response1'></span><br>
+				<span class='response2 hidden'></span>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<script></script>
+</body>
+
+</html>
